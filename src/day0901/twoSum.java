@@ -6,7 +6,7 @@ package day0901;
 import java.util.Arrays;
 import java.util.HashMap;
 public class twoSum{
-	public static int[] twoSum (int[] nums, int target){
+	public static int[] twoSum1 (int[] nums, int target){
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		int result[] = new int [2];
 		for (int i=0; i<nums.length; i++){
@@ -22,7 +22,7 @@ public class twoSum{
 	}
 	public static void main(String[] args){
 		int[] a = {2,7,11,15};
-		int[] r = twoSum(a, 9);
+		int[] r = twoSum1(a, 9);
 		System.out.println(Arrays.toString(r));
 	}
 }
